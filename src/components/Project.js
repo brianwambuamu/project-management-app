@@ -15,8 +15,8 @@ const Todo = () => {
  const [items, setitems] = useState([
    {
      id: "001",
-     name: "Default Task",
-     desc: "Default Description",
+     name: "Project Name",
+     desc: "Project Description",
      status: false,
    },
  ]);
@@ -37,7 +37,7 @@ const Todo = () => {
  
    e.preventDefault();
    if (!inputTitle || !inputDesc) {
-     alert("fill data");
+     alert("No data filled");
      showList(false);
    } else if (inputTitle && !toggleSubmit) {
      setitems(
@@ -131,7 +131,7 @@ const Todo = () => {
          <div className="container border rounded d-flex justify-content-center shadow p-3 mb-5 bg-white rounded">
            <div className="row">
              <div className="text-center">
-               <h2>{toggleSubmit ? "Add Task" : " Edit Task"}</h2>
+               <h2>{toggleSubmit ? "Add Project" : " Edit Project"}</h2>
              </div>
              <form className="col-12 p-2" onSubmit={handleSubmit}>
                <label htmlFor="title" className="my-2">
@@ -176,7 +176,7 @@ const Todo = () => {
      {showList ? (
        <div className="container py-2 ">
          {deleteMessage ? (
-           <p className="text-center text-danger">Item Deleted Successfully</p>
+           <p className="text-center text-danger">Project Deleted Successfully</p>
          ) : (
            ""
          )}

@@ -6,7 +6,7 @@ function Header() {
         <nav className="nav">
           <div className="nav-left">
             <a className="brand" href="#">
-                WPWeb Tasks
+                My Projects
             </a>
           </div>
           <div className="nav-right">

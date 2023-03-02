@@ -1,11 +1,11 @@
 import "./App.css";
 import Header from "./components/Header";
-import Todo from "./components/Todo";
+import Project from "./components/Project";
 function App() {
  return (
    <>
      <Header />
-     <Todo/>    
+     <Project/>    
    </>
  );
 }
