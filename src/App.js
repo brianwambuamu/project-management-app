@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./components/Header";
-import Project from "./components/Project";
+import Header from "./components/views/Header";
+import Project from "./components/views/Project";
 function App() {
  return (
    <>
