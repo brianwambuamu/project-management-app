@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-
+// function Home() {
+//   return <div>
+//     Home
+//     </div>
+    
+// }
 const Todo = () => {
  const [showForm, setshowform] = useState(true);
  const [showNew, setshowNew] = useState(true);
@@ -21,6 +26,7 @@ const Todo = () => {
      status: false,
    },
  ]);
+ 
  
  //   HANDLING INPUT FIELDS
  const handleInput = (e) => {
@@ -106,11 +112,12 @@ const Todo = () => {
  //   EDIT
  
  // ADD NEW TASK
- const handleAdd = () => {
+ const handleAdd = (event) => {
    //   alert("hello")
    setshowform(true);
    setshowList(true);
    setshowNew(false);
+   event.preventDefault();
  };
  // ADD NEW TASK
  return (
@@ -159,6 +166,7 @@ const Todo = () => {
                  onChange={handleInputdesc}
                  value={inputDesc}
                />
+                
                {/* <div className="text-center"> */}
                {toggleSubmit ? (
                  <button className="btn btn-primary my-2">Save</button>
@@ -209,6 +217,7 @@ const Todo = () => {
                      ""
                    )}
                  </div>
+                 
                </div>
             
            );

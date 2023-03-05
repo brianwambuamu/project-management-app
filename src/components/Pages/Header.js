@@ -7,12 +7,12 @@ function Header() {
         <nav className="nav">
           <div className="nav-left">
             <a className="brand" href="#">
-                My Projects
+                <h2>My Projects</h2>
             </a>
           </div>
           <div className="nav-right">
             <div className="tabs">
-              <a href="https://wpwebinfotech.com">Project Management App</a>
+              <a href="https://wpwebinfotech.com"><h2>Project Management App</h2></a>
             </div>
           </div>
         </nav>
